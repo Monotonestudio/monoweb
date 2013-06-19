@@ -19,7 +19,8 @@ $(document).ready(function () {
 			.add($("#index"))
 			.add($("#boo"))
 			.add($("#is"))
-			.add($("#what"));
+			.add($("#what"))
+			.add($("#godown"));
 
 	parallax.background = $("body");
 
@@ -35,6 +36,7 @@ $(document).ready(function () {
 		setRight("who", "who are we");
 		setTop("is", "is it?");
 		setLeft("what","what do we do");
+		setBottom("godown","down here");
 	};
 
 	parallax.is.onload=function(){
@@ -49,6 +51,10 @@ $(document).ready(function () {
 	parallax.what.onload=function(){
 		setLeft("who", "who are we");
 		setRight("index","monotone");
+	};
+
+	parallax.godown.onload=function(){
+		setTop("index", "monotone");
 	};
 
 
