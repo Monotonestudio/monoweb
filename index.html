@@ -11,8 +11,10 @@
 
 	<link rel="Stylesheet" type="text/css" href="css/mnt-index.css" />
 	<link rel="Stylesheet" type="text/css" href="css/media-queries.css" />
-<!-- 	<link rel="Stylesheet" type="text/css" href="css/gallery.css"/>
-	<link rel="Stylesheet" type="text/css" href="css/gallery2.css"/> -->
+
+	<link rel="stylesheet" href="css/plugins.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="libs/modernizr-2.5.3.min.js"></script>
 
 	<script type="text/javascript">
 
@@ -92,14 +94,47 @@
 				very.
 				much.
 			</div>
-				
+			<div id="contain">
+
+				<section id="workThumbs" class="cols">
+
+					<a href="pages/project2.html" class="item">
+						<span class="thumb" style="background-image:url('thumb_mediasilo.png');">
+							<img src="structure/blank.png" alt="MediaSilo" class="thumb">
+							<div class="over" style=" " data-bg="thumb_mediasilo.png"></div>
+						</span>
+<!--         <span class="title">rocker</span>
+-->      </a>
+
+<a href="pages/project1.html" class="item">
+	<span class="thumb" style="background-image:url('thumb_mediasilo.png');">
+		<img src="structure/blank.png" alt="MediaSilo" class="thumb">
+		<div class="over" style=" " data-bg="thumb_mediasilo.png"></div>
+	</span>
+</a>
+
+<a href="pages/project2.html" class="item">
+	<span class="thumb" style="background-image:url('thumb_mediasilo.png');">
+		<img src="structure/blank.png" alt="MediaSilo" class="thumb">
+		<div class="over" style=" " data-bg="thumb_mediasilo.png"></div>
+	</span>
+</a>
+
+<a href="pages/project1.html" class="item">
+	<span class="thumb" style="background-image:url('thumb_mediasilo.png');">
+		<img src="structure/blank.png" alt="MediaSilo" class="thumb">
+		<div class="over" style=" " data-bg="thumb_mediasilo.png"></div>
+	</span>
+</a>
+
+</section>
+
+</div>
 
 
 
-
-
-			<!-- ///////////////////////////// -->
-		</div>
+<!-- ///////////////////////////// -->
+</div>
 
 
 			<!-- <div class="container_projects">
@@ -143,12 +178,12 @@
 
 
 
-				<div id="boo" class="leaguegothic white page clickable">
+<!-- 				<div id="boo" class="leaguegothic white page clickable">
 					<div class="center w400 " style="margin-top:20%;">
 						<div class="lh0" style="font-size:300px;">BOO!</div>
 						<div style="font-size:47px">Click anywhere to head back.</div>
 					</div>
-				</div>
+				</div> -->
 
 				<div id="who" class="leaguegothic white page">
 					<a class="noanchor" href="https://github.com/stolksdorf/Parallaxjs"><div id="logo" class="f2 left">Monotone is about...</div></a>
@@ -179,6 +214,14 @@
 
 			</div>
 
+			<!-- JavaScript at the bottom for fast page loading -->
+			<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+			<script>window.jQuery || document.write('<script src="http://www.harlointeractive.com/assets/js/libs/jquery_min.js"><\/script>')</script>
+			<!-- scripts concatenated and minified via build script -->
+			<script src="js/plugins.js"></script>
+			<script src="js/script.js"></script>
+			<!-- end scripts -->
 
-		</body>
-		</html>
+</body>
+</html>
