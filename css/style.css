@@ -30,6 +30,12 @@ header p.topics span.cat_title{margin-right:5px;}*/
 
 
 /*--------------------------------*/
+/*  Globals  */
+/*--------------------------------*/
+/*position of the gallery*/
+#contain { margin: 100px auto; width: 1180px; min-width:1180px; position:relative;z-index:0;}
+
+/*--------------------------------*/
 /*  Footer  */
 /*--------------------------------*/
 footer {
@@ -221,7 +227,7 @@ section.clients { padding-bottom:20px; }
 /*--------------------------------*/
 #workThumbs { margin: 20px 0 0 0; overflow: hidden; width: 1180px;}
 #workThumbs .starter{width: 1200px;}
-#workThumbs a.item { display: block; float:left; margin:0 0 20px 0; text-decoration: none; width: 380px; }
+#workThumbs a.item { display: block; float:left; margin:0px 0 20px 0; text-decoration: none; width: 380px; }
 .home #workThumbs a.item, .services #workThumbs a.item {margin:0 20px 20px 0;}
 .home #workThumbs a.end, .services #workThumbs a.end { margin-right: 0; }
 #workThumbs a.item .thumb { background: 0 0 no-repeat; display:block; position:relative;}
@@ -519,12 +525,12 @@ a.instagram_thumb{display:block;overflow:hidden;width:380px;height:380px;}
 /*--------------------------------*/
 /*  Three Cols  */
 /*--------------------------------*/
-.threeCols h3 { background: none; padding: 0 0 50px 0; }
-.threeCols .col { background: url('../images/structure/bg_dots_double_ccc.png') left bottom repeat-x transparent; color: #959595; float: left; width: 320px; }
+.threeCols h3 { background: none; padding: 0px 0 50px 0; }
+.threeCols .col { background: url('bg_dots_double_ccc.png') left bottom repeat-x transparent; color: #959595; float: left; width: 320px; }
 .services .threeCols .col{min-height:365px;height:auto;}
 .threeCols .mid { margin: 0 60px; }
 .threeCols ul { font-family: 'GeogrotesqueLight', Arial, Helvetica, sans-serif; font-size: 20px; }
-.threeCols ul li { background: url('../images/structure/bg_dots_single_ccc.png') left top repeat-x transparent; padding: 20px 0; }
+.threeCols ul li { background: url('structure/bg_dots_single_ccc.png') left top repeat-x transparent; padding: 20px 0; }
 .threeCols ul.withH4 li:first-child { background: none; }
 .threeCols .col h3 { background: none; color: #252525; margin: 30px 0 20px 0; padding: 0; text-transform: uppercase; }
 .threeCols .col p { font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 1.25em; margin:15px 0; }
