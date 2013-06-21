@@ -20,7 +20,9 @@ $(document).ready(function () {
 			.add($("#boo"))
 			.add($("#is"))
 			.add($("#what"))
-			.add($("#godown"));
+			.add($("#godown"))
+			//gallery items, this needs to be optimized gi = gallery item
+			.add($("#gi1"));
 
 	parallax.background = $("body");
 

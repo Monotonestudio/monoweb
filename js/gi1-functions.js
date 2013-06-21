@@ -1,26 +1,25 @@
 
 
-var rightCode = "parallax.speed = 2000;\n\nparallax.boo.right();";
-var topCode = "parallax.scaling = 'linear';\n\nparallax.boo.top();"
-var leftCode ="parallax.scaling = 0.9;\n\nparallax.boo.left();";
-var bottomCode ="parallax.boo.onload = function(){\n\talert('Awesome alert buddy. Truly spectacular.');\n});\n\nparallax.boo.bottom();";
+var rightCode = "parallax.speed = 2000;\n\nparallax.gi1.right();";
+var topCode = "parallax.scaling = 'linear';\n\nparallax.gi1.top();"
+var leftCode ="parallax.scaling = 0.9;\n\nparallax.gi1.left();";
+var bottomCode ="parallax.gi1.onload = function(){\n\talert('Awesome alert buddy. Truly spectacular.');\n});\n\nparallax.gi1.bottom();";
 var lastCode="parallax.last.bottom();"
 var currentCode="parallax.current.ackbar(); ////What is it? "
 
+/*
+we need to make this class reusable by creating the tags for the g1+number
+*/
+
 $(document).ready(function () {
 	
-	$("#boo").click(function(){
+	$("#gi1").click(function(){
 		//clear away all the modifers
 		parallax.speed = 800;
 		parallax.easing = 'swing';
 		parallax.scaling = 0.15;
-		parallax.boo.onload = function(){};
-		//Randomly picks a direction to head back too
-		var rand =Math.floor(Math.random()*4)
-		if(rand == 0) parallax.godown.top();
-		else if(rand == 1) parallax.godown.left();
-		else if(rand == 2) parallax.godown.right();
-		else parallax.godown.bottom();
+		parallax.gi1.onload = function(){};
+		parallax.godown.top();
 	});
 	
 	$("#fromLast").click(function(){
@@ -37,30 +36,30 @@ $(document).ready(function () {
 	
 	$("#fromRight").click(function(){
 		parallax.speed = 2000;
-		parallax.boo.right();
+		parallax.gi1.right();
 	}).hover(function(){
 		$("#codebox").html(rightCode);
 	});
 	
 	$("#fromTop").click(function(){
 		parallax.scaling = 'linear';
-		parallax.boo.top();
+		parallax.gi1.top();
 	}).hover(function(){
 		$("#codebox").html(topCode);
 	});
 	
 	$("#fromLeft").click(function(){
 		parallax.scaling = 0.9;
-		parallax.boo.left();
+		parallax.gi1.left();
 	}).hover(function(){
 		$("#codebox").html(leftCode);
 	});
 	
 	$("#fromBottom").click(function(){
-		parallax.boo.onload = function(){
+		parallax.gi1.onload = function(){
 			alert("Alert me.");
 		};
-		parallax.boo.bottom();
+		parallax.gi1.bottom();
 	}).hover(function(){
 		$("#codebox").html(bottomCode);
 	});
