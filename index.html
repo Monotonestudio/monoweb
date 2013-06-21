@@ -37,6 +37,33 @@
 
 <body class="background">
 
+			<!--POSITION OF THE IMAGE ON THE CANVAS, used as background-->
+		<style>
+		#bg {
+			position: fixed; 
+			top: -10%; /*-50*/
+			left: -10%; /*-50*/
+			width: 120%; /*200*/
+			height: 120%;/*200*/
+		}
+		#bg img {
+			position: absolute; 
+			top: 0; 
+			left: 0; 
+			right: 0; 
+			bottom: 0; 
+			margin: auto; 
+			min-width: 50%;
+			min-height: 50%;
+			
+		}
+
+		</style>
+
+		<div id="bg">
+			<img src="assets/Monotone-transparant-HUGE.png" alt="" width = 10%; style-"z-index: -1;" id="myImg" value="Fade In">
+		</div>
+
 	<div class="container">
 
 		<div id="index" class="leaguegothic white page">
@@ -66,8 +93,10 @@
 			}
 			</style>
 		-->
-		<!--POSITION OF THE IMAGE ON THE CANVAS, used as background-->
-		<style>
+
+
+					<!--POSITION OF THE IMAGE ON THE CANVAS, used as background-->
+		<!--<style>
 		#bg {
 			position: fixed; 
 			top: -10%; /*-50*/
@@ -90,10 +119,9 @@
 		</style>
 
 		<div id="bg">
-			<img src="assets/Monotone-transparant-HUGE.png" alt="" width = 10%; style-"z-index: -1;">
+			<img src="assets/Monotone-transparant-HUGE.png" alt="" width = 10%; style-"z-index: -1;" id="myImg" value="Fade In">
 		</div>
-
-
+	-->
 
 	</div>
 
@@ -276,11 +304,13 @@
 	<div id="leftText" class="dirText" style="float:right"> Test</div>
 </div>
 
+<!--
 <script>
 $("#leftControl").click(function(){
 	fade(this);
 });
 </script>
+-->
 
 
 <div id="rightControl" class="control">
@@ -288,22 +318,12 @@ $("#leftControl").click(function(){
 	<div id="rightText" class="dirText" style="float:left"> Test</div>
 </div>
 
-<script>
-$("#rightControl").click(function(){
-	fade(this);
-});
-</script>
 
 <div id="topControl" class="control center" style="width:145px;left:45%;">
 	<img id="topArrow" class="arrow left" style="height:60px" src="assets/arrowtop2.png"></img>
 	<div id="topText" class="dirText txtcenter" > Test</div>
 </div>
 
-<script>
-$("#topControl").click(function(){
-	fade(this);
-});
-</script>
 
 <div id="bottomControl" class="control center" style="width:145px;left:45%;bottom:0px;">
 	<div id="bottomText" class="dirText txtcenter"> Test</div>
@@ -311,11 +331,6 @@ $("#topControl").click(function(){
 
 </div>
 
-<script>
-$("#bottomText").click(function(){
-	fade(this);
-});
-</script>
 
 <!-- JavaScript at the bottom for fast page loading -->
 <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
@@ -369,9 +384,9 @@ function fade(btnElement) {
 
 
 
-
+<!--debugging the fade of the image-->
 <!-- <input id="myBtn" type="button" value="Fade Out" onclick="fade(this);" style="position:relative;" /> -->
-<img id="myImg" src="assets/Monotone-transparant.png" /> 
+<!-- <img id="myImg" src="assets/Monotone-transparant.png" />  -->
 
 
 </body>
