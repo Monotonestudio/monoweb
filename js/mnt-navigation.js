@@ -138,4 +138,14 @@ $(document).ready(function () {
 	$(".control").hide();
 	parallax.index.show();
 
+   $("#returnFromGallery").click(function(){
+		//clear away all the modifers
+		parallax.speed = 800;
+		parallax.easing = 'swing';
+		parallax.scaling = 0.15;
+		parallax.boo.onload = function(){};
+		//Randomly picks a direction to head back too
+		parallax.sandbox.top();
+	});
+
 });
