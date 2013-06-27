@@ -35,7 +35,7 @@ $(document).ready(function () {
 
 	//Setting up page navigation
 	parallax.index.onload=function(){
-		setRight("who", "who are we");
+		setRight("who", "blog");
 		setTop("is", "is it?");
 		setLeft("what","what do we do");
 		setBottom("godown","down here");
